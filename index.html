@@ -533,6 +533,21 @@
             </li>
           </ul>
         </div>
+        <!-- розсилка -->
+        <div class="footer-sign">
+          <strong class="footer-sign-text">Подпишитесь на рассылку</strong>
+          <form class="form-sign">
+            <label for="mail"></label>
+            <input type="email" name="mail" id="mail" placeholder="E-mail" />
+
+            <button class="footer-button-sign" type="submit" disabled>
+              Подписаться
+              <svg class="footer-icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -553,9 +568,9 @@
             <!-- Форми реєстрації -->
 
             <label class="label-register">
-              <input class="form-input" type="text" name="user-name" />
               <span class="register-text">Ім'я</span>
               <span class="modal-icon">
+                <input class="form-input" type="text" id="user-name" name="user-name" />
                 <svg class="register-modal-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-name"></use>
                 </svg>
@@ -563,9 +578,9 @@
             </label>
 
             <label class="label-register">
-              <input class="form-input" type="phone" name="user-phone" />
               <span class="register-text">Телефон</span>
               <span class="modal-icon">
+                <input class="form-input" type="tel" id="user-phone" name="user-phone" />
                 <svg class="register-modal-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
@@ -573,21 +588,21 @@
             </label>
 
             <label class="label-register">
-              <input class="form-input" type="email" name="user-mail" />
               <span class="register-text">Пошта</span>
               <span class="modal-icon">
+                <input class="form-input" type="email" id="user-mail" name="user-mail" />
                 <svg class="register-modal-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </span>
             </label>
 
-            <label class="label-register" for="">
+            <label class="label-register">
               <span class="register-text">Комментар</span>
               <textarea
                 class="comment"
                 name="user-masage"
-                id=""
+                id="user-masage"
                 cols="30"
                 rows="10"
                 placeholder="Введіть текст"
@@ -602,7 +617,7 @@
                 checked
               />
               <span class="form-checkbox-custom">
-                <svg class="form-checkbox-icon" width="20" height="20">
+                <svg class="form-checkbox-icon" width="11" height="8">
                   <use class="vector-done" href="./images/icons.svg#vector-done"></use>
                 </svg>
               </span>
@@ -611,7 +626,7 @@
               </span>
             </label>
 
-            <button class="modal-button" type="submit ">Відправити</button>
+            <button class="modal-button" type="submit">Відправити</button>
           </form>
         </div>
       </div>
